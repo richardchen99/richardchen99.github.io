@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://richardchen99.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://richardchen99.github.io/" rel="alternate" type="text/html" /><updated>2026-09-10T15:42:10+08:00</updated><id>https://richardchen99.github.io/feed.xml</id><title type="html">Richard Chen</title><subtitle>AI, business analytics and fintech researcher focused on decision intelligence, predictive modeling and data-driven strategy.</subtitle><author><name>Richard Chen</name><email>chenjd999@163.com</email><uri>https://richardchen99.github.io/</uri></author><entry><title type="html">The Human Stack After AI: 当Agent成为基础设施，我们还剩下什么能力</title><link href="https://richardchen99.github.io/the-human-stack-after-ai/" rel="alternate" type="text/html" title="The Human Stack After AI: 当Agent成为基础设施，我们还剩下什么能力" /><published>2026-09-02T00:00:00+08:00</published><updated>2026-09-02T00:00:00+08:00</updated><id>https://richardchen99.github.io/the-human-stack-after-ai</id><content type="html" xml:base="https://richardchen99.github.io/the-human-stack-after-ai/"><![CDATA[<section class="ai-dependence-essay">
+  <p class="ai-dependence-kicker">Research Note / Human-AI Interaction</p>
+  <p class="ai-dependence-lead">最近我越来越明显地感觉到，AI 正在从效率工具变成一层新的认知基础设施。写代码、写文档、查资料、学知识、做 PPT、读论文、改简历，甚至刚开始构思一个问题时，很多人的第一反应已经变成了先问 AI，再自己想。</p>
+
+  <p>我并不排斥这种变化。工具变强，本来就是文明向前走的一部分。我自己也是 AI 的高频使用者，也很清楚它能带来速度、视野和表达上的帮助。只是我慢慢开始担心另一件事：如果一个人越来越习惯把问题分解、路径选择、证据筛选和最后的表达都交给 AI，他失去的可能会从某个具体知识点，慢慢扩展成一整套独立思考的肌肉。</p>
+
+  <figure class="ai-stack-figure">
+    <div class="ai-stack-visual" role="img" aria-label="AI 时代人的认知能力栈示意图">
+      <div class="ai-stack-layer ai-stack-layer--top">
+        <span>AI Assistance</span>
+        <strong>generate · search · code · simulate</strong>
+      </div>
+      <div class="ai-stack-layer">
+        <span>Human Judgment</span>
+        <strong>frame · verify · decide · own</strong>
+      </div>
+      <div class="ai-stack-layer">
+        <span>System Literacy</span>
+        <strong>data · model · evaluation · deployment</strong>
+      </div>
+      <div class="ai-stack-layer">
+        <span>Working Skills</span>
+        <strong>debug · experiment · write · calculate</strong>
+      </div>
+      <div class="ai-stack-layer ai-stack-layer--base">
+        <span>Foundation</span>
+        <strong>math · programming · domain · logic</strong>
+      </div>
+    </div>
+    <figcaption>AI 可以放在能力栈顶部，但它不应该替代底层基础和系统理解。底层一旦空了，顶部越强，人越容易误以为自己真的掌控了问题。</figcaption>
+  </figure>
+
+  <h2>便利本身没问题，跳过过程才有问题</h2>
+
+  <p>认知科学里有一个概念叫 <em>cognitive offloading</em>，说白了，就是把一部分脑力任务交给外部工具。写备忘录、用计算器、查搜索引擎，本质上都算认知外包。Risko 和 Gilbert 在综述里把它定义为通过外部行动或工具降低内部认知需求。这个行为本身并不坏，甚至很聪明。更需要警惕的是：你外包出去的，究竟是重复劳动，还是原本应该长在自己身上的能力。</p>
+
+  <p>如果我已经亲手走过从数据理解、特征处理、损失函数、训练验证到泛化风险判断的过程，再让 AI 帮我整理报告结构，那它就是工具。比如做一个分类任务时，我知道逻辑回归为什么要看概率和阈值，随机森林为什么能缓解单棵树的波动，SVM 的间隔和核函数又是在怎样改变决策边界，这时候让 AI 帮我写一段初稿或者补一个实验说明，并不会削弱我的判断。相反，如果我从来没有真正推过优化过程，没有手写过一个最小可运行的训练循环，也没有处理过缺失值、类别不平衡、数据泄漏和过拟合，却直接让 AI 生成一段“看起来能跑”的模型代码，那就很危险。因为这个过程里，我得到的是结果，不是能力。</p>
+
+  <p>教育研究里已经能看到这种差异。Bastani 等人在 2025 年发表的高中数学实验显示，不设保护栏的 GPT-4 会让学生在练习阶段表现更好，但当 AI 被拿走后，这些学生在后续考试中的表现反而低于未使用 AI 的对照组；带有提示式、教学式约束的 GPT Tutor 则缓解了这种损害。这个结果对我很有提醒意义：AI 并不是天然伤害学习，真正伤害学习的是“答案先于思考”。</p>
+
+  <figure class="ai-risk-map">
+    <div class="ai-risk-map__grid" role="img" aria-label="AI 使用方式与基础能力之间的风险矩阵">
+      <div class="ai-risk-map__axis ai-risk-map__axis--y">Human foundation</div>
+      <div class="ai-risk-map__cell ai-risk-map__cell--good">
+        <span>Strong foundation</span>
+        <strong>Augmented Research</strong>
+        <p>AI 放大速度，人保留问题定义、验证和责任。</p>
+      </div>
+      <div class="ai-risk-map__cell ai-risk-map__cell--watch">
+        <span>Strong foundation</span>
+        <strong>Calibration Drift</strong>
+        <p>能力还在，但验证、复现实验和怀疑精神变弱。</p>
+      </div>
+      <div class="ai-risk-map__cell ai-risk-map__cell--build">
+        <span>Weak foundation</span>
+        <strong>Scaffold First</strong>
+        <p>先练基础概念、手工推导和最小可运行实验。</p>
+      </div>
+      <div class="ai-risk-map__cell ai-risk-map__cell--bad">
+        <span>Weak foundation</span>
+        <strong>Dependency Trap</strong>
+        <p>输出很好看，知识没有内化，错误也难以识别。</p>
+      </div>
+      <div class="ai-risk-map__axis ai-risk-map__axis--x">AI delegation level</div>
+    </div>
+    <figcaption>风险不来自“用不用 AI”，而来自基础能力和外包程度的组合。</figcaption>
+  </figure>
+
+  <h2>技术要落到一整条能力链上</h2>
+
+  <p>有时候我们说“会机器学习”，很容易把能力压缩成几个模型名字；说“会 AI”，又容易落到提示词、MCP 配置、Agent 编排这些外层动作上。我不太喜欢这种说法。真正的技术能力更像一条连续链路：先看数据从哪里来，噪声怎么产生，样本是不是代表真实世界；再往下才是特征、概率、优化、损失函数、模型评估和泛化风险。</p>
+
+  <p>模型名称当然有意义，关键是有没有把它们和问题连起来。逻辑回归会训练人对概率、阈值和线性边界的直觉；随机森林会让人看到采样、树深、特征重要性和泛化稳定性之间的关系；SVM 会把人重新拉回 margin、核函数和高维空间这些更底层的问题。到深度学习也是一样，Transformer 和 Attention 是重要入口，但如果没有把它们放进表示学习、CNN/RNN/GNN、扩散模型、多模态对齐、自监督学习、强化学习和推理加速这些问题里看，最后很容易只停留在“会调包”。</p>
+
+  <p>大模型时代也是同样的逻辑。MCP、Skill、Agent 很有价值，但它们更多是应用接口和工作流编排的一部分。再往里看，还有预训练、指令微调、RLHF/RLAIF、RAG、向量数据库、工具调用、记忆机制、规划与反思、模型路由、LoRA、量化、蒸馏、端侧小模型、推理成本控制、评估基准、可观测性、安全对齐和治理。一个人不一定要把每个方向都做到专家级，但至少要知道系统由哪些层构成，每一层大概解决什么问题，又会在哪些地方失效。</p>
+
+  <figure class="ai-technical-map">
+    <div class="ai-technical-map__grid" role="img" aria-label="AI 技术能力链示意图">
+      <div class="ai-technical-map__item">
+        <span>01</span>
+        <strong>Mathematical Core</strong>
+        <p>线性代数、概率统计、优化、信息论、因果思维。</p>
+      </div>
+      <div class="ai-technical-map__item">
+        <span>02</span>
+        <strong>Learning Systems</strong>
+        <p>监督学习、无监督学习、自监督学习、强化学习、评估设计。</p>
+      </div>
+      <div class="ai-technical-map__item">
+        <span>03</span>
+        <strong>Model Architecture</strong>
+        <p>CNN、RNN、Transformer、Diffusion、GNN、多模态基础模型。</p>
+      </div>
+      <div class="ai-technical-map__item">
+        <span>04</span>
+        <strong>Knowledge Interface</strong>
+        <p>RAG、向量检索、知识库、工具调用、函数调用、上下文工程。</p>
+      </div>
+      <div class="ai-technical-map__item">
+        <span>05</span>
+        <strong>Agentic Workflow</strong>
+        <p>规划、记忆、反思、任务分解、多 Agent 协作、人类审核。</p>
+      </div>
+      <div class="ai-technical-map__item">
+        <span>06</span>
+        <strong>Operational Control</strong>
+        <p>可复现、可观测、成本、延迟、隐私、安全、治理与责任。</p>
+      </div>
+    </div>
+    <figcaption>前沿能力的关键，是理解从数学基础到系统治理的完整链条。</figcaption>
+  </figure>
+
+  <h2>我庆幸自己经历过一个过渡时代</h2>
+
+  <p>我很庆幸自己不是一开始就站在现在这个 AI 环境里。小时候遇到问题，更多是先自己想，想不明白再查资料、问老师同学、上网搜、看网课、翻教程。再往后，猿辅导、作业帮这类工具开始进入学习过程。那个阶段当然也有捷径，但至少很多时候，问题不会直接被完整地“生成”出来。你还是要自己读题、试错、卡住，再慢慢把答案拼出来。</p>
+
+  <p>后来我开始自己写 C++、Python，自己搭信息系统，也自己写机器学习代码。最早接触的是线性模型、树模型、间隔分类器这些基础方法。写逻辑回归时，要亲手处理 sigmoid、损失函数和梯度更新；调随机森林时，会反复看树深、采样、特征重要性和过拟合；研究 SVM 时，又会被 margin、核函数和参数敏感性拉回数学本身。现在回头看，比起“我学过哪些模型”，更重要的是完整走过一条建模链路的经验：原始数据怎么清洗，特征为什么这样构造，训练集和验证集怎样切分，指标是否贴近问题目标，模型解释能不能经得起业务语境的追问。</p>
+
+  <p>一个模型跑不动时，问题可能在数据类型，可能在特征泄漏，可能在维度 shape，可能在学习率，可能在评估方式，也可能在业务假设本身。很多时候，一晚上的成果只是把一个 bug 定位清楚，或者终于弄明白某个库函数的输入形状。那种慢，今天看起来很低效，但它训练了一个人和问题硬碰硬的能力。</p>
+
+  <p>我第一次真正把 GPT-3.5 当成工具使用，大概是在 2023 年 11 月左右。那种感觉很明显：以前需要半天查资料、整理框架、写初稿的事，现在几分钟就能得到一个像样的版本。后来模型开始支持多模态，各大厂商把 AI 接进办公、编程、搜索和手机系统，我也开始学习如何更好地用 AI 写代码、写报告、整理研究。再往后，我接触深度学习、Transformer、Attention、RAG、微调、模型评估、MCP、Skill、Agent 和工具链编排。这个过程反而让我更确定一件事：AI 不是魔法，它背后也有结构、数据、优化、工程约束和系统边界。</p>
+
+  <figure class="ai-timeline-figure">
+    <div class="ai-timeline" role="img" aria-label="从独立学习到 AI 协作的个人时间线">
+      <div>
+        <span>Before AI</span>
+        <strong>问人、查书、搜资料</strong>
+        <p>问题需要自己拆开，答案需要自己拼起来。</p>
+      </div>
+      <div>
+        <span>Code by Hand</span>
+        <strong>C++ · Python · ML Systems</strong>
+        <p>数据、特征、训练、评估、调参和 debug 都要亲自走一遍。</p>
+      </div>
+      <div>
+        <span>GPT-3.5</span>
+        <strong>从问答到研究协作</strong>
+        <p>效率突然被拉高，但也开始考验判断力。</p>
+      </div>
+      <div>
+        <span>Agent Era</span>
+        <strong>RAG · Agent · Workflow</strong>
+        <p>模型开始连接知识和工具，人的职责转向设计、验证和负责。</p>
+      </div>
+    </div>
+    <figcaption>有价值的地方，在于带着手工时代形成的判断力进入 AI 时代。</figcaption>
+  </figure>
+
+  <h2>前沿要看边界</h2>
+
+  <p>我现在看 AI 前沿，更关心一个方向解决了什么约束，又带来了什么新约束。RAG 解决的是模型知识更新和可追溯问题，但它会引入召回质量、切片粒度、上下文污染和引用可靠性的挑战。Agent 解决的是多步骤任务编排问题，但它也会放大错误传播、权限管理、长期记忆污染和成本失控。多模态模型拓宽了输入输出空间，同时让评估、对齐和数据版权更复杂。端侧模型和小模型降低了成本与隐私压力，却又要面对能力压缩、量化损失和任务适配。</p>
+
+  <p>所以我越来越觉得，AI 素养不能停在“把所有新工具都用一遍”。它需要一种拆系统的能力：哪些地方靠模型能力，哪些地方靠数据质量，哪些地方靠检索和工具，哪些地方必须有人类审核，哪些地方需要日志、回滚、评估和安全边界。只会调用 AI 的人，在系统顺风时看起来很快；能理解边界的人，才有机会在系统失效时把问题救回来。</p>
+
+  <h2>如果 AI 暂时消失，我们还能不能工作</h2>
+
+  <p>我并不认为 AI 会突然从世界上消失。但技术系统从来不是抽象存在，它依赖算力、能源、芯片、网络、政策、供应链和地缘环境。如果某一天因为成本、战争、制裁、基础设施故障或模型能力退化，我们无法像今天一样随时调用强大的 AI，很多人的工作方式会立刻暴露出脆弱性。</p>
+
+  <p>我更想追问的是一些具体问题：没有 AI 以后，还能不能自己定义问题？还能不能从零读懂一段代码？还能不能判断一个模型输出是不是错的？还能不能在没有自动补全的情况下，把一个系统拆成模块，把错误缩小到某几行，把数据从混乱状态整理成可分析状态？还能不能在没有云端大模型的情况下，用小模型、本地脚本、离线文档、传统算法和自己的专业判断，搭出一个能工作的低资源版本？</p>
+
+  <p>如果答案是否定的，那说明 AI 并没有增强我们，而是在替我们保管能力。基础能力外包出去以后，短期看像是效率提升，长期看可能是认知债务。债务平时不会出现，只有在工具不可用、任务超出模型边界、输出看似合理但事实错误的时候，它才会一次性到期。</p>
+
+  <h2>我的原则：先保持能手写，再决定让 AI 接管多少</h2>
+
+  <p>我现在更愿意把 AI 当作一个高级研究助理，而不是外置大脑。它可以帮我扩展材料、生成备选方案、检查逻辑漏洞、写脚手架代码，也可以把一个粗糙想法整理成更清楚的结构。但在关键问题上，我希望自己仍然能先给出判断，再让 AI 参与。</p>
+
+  <div class="ai-principles">
+    <div>
+      <span>01</span>
+      <strong>先独立建模</strong>
+      <p>先写下自己的问题定义、变量关系和初步判断，再让 AI 补充。</p>
+    </div>
+    <div>
+      <span>02</span>
+      <strong>保留手工实验</strong>
+      <p>算法、代码、统计、写作和领域知识，定期不用 AI 重新做一遍。</p>
+    </div>
+    <div>
+      <span>03</span>
+      <strong>建立验证管线</strong>
+      <p>重要输出要有测试、复现、事实核查、指标评估和反例检查。</p>
+    </div>
+    <div>
+      <span>04</span>
+      <strong>理解系统边界</strong>
+      <p>区分模型能力、数据质量、工具权限、上下文窗口和工程约束。</p>
+    </div>
+    <div>
+      <span>05</span>
+      <strong>训练失去工具后的能力</strong>
+      <p>能在没有 AI 的时候复现思路，才说明能力真的长在自己身上。</p>
+    </div>
+    <div>
+      <span>06</span>
+      <strong>把 AI 当审稿人</strong>
+      <p>让它质疑、反驳、检查边界，而不是直接替自己得出结论。</p>
+    </div>
+  </div>
+
+  <p>这并不是反 AI。恰恰相反，越理解 AI 的能力，越应该认真保护人的能力。未来真正稀缺的人，也许不是提问速度最快的人；更像是在 AI 给出漂亮答案之后，仍然知道哪里要怀疑、哪里要验证、哪里需要推倒重来的人。</p>
+
+  <blockquote class="ai-dependence-quote">
+    <p>我希望自己在 AI 时代保持一种清醒：享受工具带来的速度，但不把思考的主权交出去。</p>
+  </blockquote>
+
+  <h2>参考文献</h2>
+
+  <ol class="ai-reference-list">
+    <li>Sparrow, B., Liu, J., &amp; Wegner, D. M. (2011). <a href="https://doi.org/10.1126/science.1207745">Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips</a>. <em>Science</em>, 333(6043), 776-778.</li>
+    <li>Risko, E. F., &amp; Gilbert, S. J. (2016). <a href="https://doi.org/10.1016/j.tics.2016.07.002">Cognitive Offloading</a>. <em>Trends in Cognitive Sciences</em>, 20(9), 676-688.</li>
+    <li>Parasuraman, R., &amp; Riley, V. (1997). <a href="https://doi.org/10.1518/001872097778543886">Humans and Automation: Use, Misuse, Disuse, Abuse</a>. <em>Human Factors</em>, 39(2), 230-253.</li>
+    <li>Noy, S., &amp; Zhang, W. (2023). <a href="https://doi.org/10.1126/science.adh2586">Experimental evidence on the productivity effects of generative artificial intelligence</a>. <em>Science</em>, 381(6654), 187-192.</li>
+    <li>Brynjolfsson, E., Li, D., &amp; Raymond, L. (2023). <a href="https://www.nber.org/papers/w31161">Generative AI at Work</a>. NBER Working Paper No. 31161.</li>
+    <li>Dell'Acqua, F., McFowland, E., Mollick, E. R., et al. (2023). <a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=64700">Navigating the Jagged Technological Frontier</a>. Harvard Business School Working Paper.</li>
+    <li>Bastani, H., Bastani, O., Sungu, A., et al. (2025). <a href="https://doi.org/10.1073/pnas.2422633122">Generative AI without guardrails can harm learning: Evidence from high school mathematics</a>. <em>PNAS</em>, 122(26), e2422633122.</li>
+    <li>Lee, H.-P., Sarkar, A., Tankelevitch, L., et al. (2025). <a href="https://doi.org/10.1145/3706598.3713778">The Impact of Generative AI on Critical Thinking</a>. <em>CHI 2025</em>.</li>
+    <li>Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>. <em>NeurIPS</em>.</li>
+    <li>Bommasani, R., Hudson, D. A., Adeli, E., et al. (2021). <a href="https://arxiv.org/abs/2108.07258">On the Opportunities and Risks of Foundation Models</a>. Stanford CRFM.</li>
+    <li>Brown, T. B., Mann, B., Ryder, N., et al. (2020). <a href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners</a>. <em>NeurIPS</em>.</li>
+    <li>Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022). <a href="https://arxiv.org/abs/2203.15556">Training Compute-Optimal Large Language Models</a>. arXiv.</li>
+    <li>Ouyang, L., Wu, J., Jiang, X., et al. (2022). <a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a>. <em>NeurIPS</em>.</li>
+    <li>Lewis, P., Perez, E., Piktus, A., et al. (2020). <a href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a>. <em>NeurIPS</em>.</li>
+    <li>Wei, J., Wang, X., Schuurmans, D., et al. (2022). <a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a>. <em>NeurIPS</em>.</li>
+    <li>Yao, S., Zhao, J., Yu, D., et al. (2023). <a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a>. <em>ICLR</em>.</li>
+  </ol>
+</section>]]></content><author><name>Richard Chen</name><email>chenjd999@163.com</email><uri>https://richardchen99.github.io/</uri></author><category term="AI" /><category term="Human-AI Interaction" /><category term="Learning" /><category term="Cognitive Science" /><summary type="html"><![CDATA[AI 正在成为写作、编程、学习和决策的基础设施。工具变强并不可怕，更值得追问的是：人在把基础能力交出去之后，还能不能保留独立思考、验证和重建系统的能力。]]></summary></entry><entry><title type="html">Codex 桌面版如何配置 WPS MCP：从连接到生成文档、表格和 PPT</title><link href="https://richardchen99.github.io/codex-mcp-wps-guide/" rel="alternate" type="text/html" title="Codex 桌面版如何配置 WPS MCP：从连接到生成文档、表格和 PPT" /><published>2026-08-28T00:00:00+08:00</published><updated>2026-08-28T00:00:00+08:00</updated><id>https://richardchen99.github.io/codex-mcp-wps-guide</id><content type="html" xml:base="https://richardchen99.github.io/codex-mcp-wps-guide/"><![CDATA[<p>这篇文章讲的是 <strong>Codex 桌面版 / Codex 图形界面</strong> 里如何配置 WPS MCP，并用它生成 WPS 可以打开的文档、表格和演示稿。</p>
+
+<p>先说明一个容易混淆的点：这里说的不是普通 ChatGPT 聊天窗口，也不是让你一直在终端里敲命令。我们要做的是在 Codex 的桌面或 IDE 界面里打开 MCP 配置，把 WPS MCP Server 接进去。配置完成后，你只需要在 Codex 对话里说“帮我生成一份周报”或“帮我做一个销售数据表”，Codex 就能调用 WPS MCP 工具完成文件生成。</p>
+
+<p class="mcp-guide-lead">MCP 可以理解成 AI 的“工具插座”。Codex 负责理解你的需求，WPS MCP 负责把需求变成真实文件，例如 <code>.docx</code>、<code>.xlsx</code> 和 <code>.pptx</code>。</p>
+
+<figure class="mcp-guide-hero">
+  <div class="mcp-guide-hero-visual" role="img" aria-label="Codex 桌面版通过 MCP Server 生成 WPS 文档、表格和演示文件的流程示意图">
+    <div class="mcp-guide-terminal">
+      <span>Codex Desktop</span>
+      <strong>Settings -&gt; MCP -&gt; Open config.toml</strong>
+      <code>[mcp_servers.wps]</code>
+      <code>command = "python"</code>
+      <code>workspace = "WPS_WORKSPACE"</code>
+    </div>
+    <div class="mcp-guide-bridge">
+      <span>Local Tool</span>
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      <strong>MCP</strong>
+    </div>
+    <div class="mcp-guide-doc-stack">
+      <div><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>.docx</span></div>
+      <div><i class="fa-solid fa-table-cells" aria-hidden="true"></i><span>.xlsx</span></div>
+      <div><i class="fa-solid fa-chart-simple" aria-hidden="true"></i><span>.pptx</span></div>
+    </div>
+  </div>
+  <figcaption>配置完成后，Codex 桌面版会在本机启动 WPS MCP Server，再通过它生成或读取 WPS/Office 文件。</figcaption>
+</figure>
+
+<h2 id="一句话讲清楚你在配置什么">一句话讲清楚你在配置什么</h2>
+
+<p>你不是在给 WPS 装一个传统插件，而是在给 Codex 增加一个“本地办公工具箱”。</p>
+
+<div class="mcp-guide-flow" aria-label="Codex 桌面版连接 WPS MCP 的工作流">
+  <div>
+    <span>01</span>
+    <strong>你提出需求</strong>
+    <p>例如：生成周报、整理 Excel、制作 3 页 PPT。</p>
+  </div>
+  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  <div>
+    <span>02</span>
+    <strong>Codex 选择工具</strong>
+    <p>判断应该调用创建文档、写单元格还是生成幻灯片。</p>
+  </div>
+  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  <div>
+    <span>03</span>
+    <strong>WPS MCP 执行</strong>
+    <p>本机 Python 服务把任务转成具体的文件操作。</p>
+  </div>
+  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  <div>
+    <span>04</span>
+    <strong>WPS 打开结果</strong>
+    <p>你在工作目录里看到生成好的 <code>.docx</code>、<code>.xlsx</code>、<code>.pptx</code>。</p>
+  </div>
+</div>
+
+<p>这里的关键是：Codex 桌面版并不是“直接控制 WPS 界面”。它先通过 MCP 调用一个本地工具，再由这个工具生成 WPS 可以打开的标准 Office 文件。</p>
+
+<h2 id="本文采用的-wps-mcp-方案">本文采用的 WPS MCP 方案</h2>
+
+<p>目前 WPS MCP 大致有两类：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>方案</th>
+      <th>适合谁</th>
+      <th>特点</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>文件级 WPS MCP</td>
+      <td>新手、跨平台用户、主要想生成文档</td>
+      <td>直接生成 <code class="language-plaintext highlighter-rouge">.docx</code>、<code class="language-plaintext highlighter-rouge">.xlsx</code>、<code class="language-plaintext highlighter-rouge">.pptx</code>，上手简单</td>
+    </tr>
+    <tr>
+      <td>Windows COM 自动化</td>
+      <td>Windows 用户、想操作已打开的 WPS 窗口</td>
+      <td>能控制真实 WPS 应用，但依赖 Windows、WPS 安装和 COM 环境</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>本文使用更适合入门的文件级方案：<a href="https://github.com/Xiao-rx/wps-mcp-server">Xiao-rx/wps-mcp-server</a>。它通过 <code class="language-plaintext highlighter-rouge">python-docx</code>、<code class="language-plaintext highlighter-rouge">openpyxl</code>、<code class="language-plaintext highlighter-rouge">python-pptx</code> 生成 Office 标准文件，所以 WPS 和 Microsoft Office 都能打开。</p>
+
+<p>如果你后续需要“修改当前打开的表格”“操作图表”“导出 PDF”“运行宏”，再考虑 <a href="https://github.com/hinora/office-mcp">hinora/office-mcp</a> 这类 Windows COM 自动化方案。它更强，但不适合作为第一篇入门教程。</p>
+
+<h2 id="配置前准备">配置前准备</h2>
+
+<p>先准备四样东西：</p>
+
+<div class="mcp-guide-checks">
+  <div><i class="fa-solid fa-desktop" aria-hidden="true"></i><strong>Codex 桌面版</strong><span>能正常登录，并能进入 Codex 工作区或编码代理界面。</span></div>
+  <div><i class="fa-brands fa-python" aria-hidden="true"></i><strong>Python 3.10+</strong><span>用于运行 WPS MCP Server。路径最好固定，不要频繁移动。</span></div>
+  <div><i class="fa-solid fa-folder-open" aria-hidden="true"></i><strong>WPS MCP 文件夹</strong><span>下载并固定保存 <code>wps_mcp.py</code> 这个服务脚本。</span></div>
+  <div><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><strong>输出工作目录</strong><span>专门保存 AI 生成的办公文件，避免误写其他目录。</span></div>
+</div>
+
+<p>推荐目录结构如下：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Documents/
+  mcp-servers/
+    wps-mcp-server/
+      wps_mcp.py
+      requirements.txt
+      .venv/
+  wps-mcp-workspace/
+    weekly_report.docx
+    ai_office_demo.xlsx
+    product_intro.pptx
+</code></pre></div></div>
+
+<p>如果你不熟悉 Python 环境，可以把准备工作理解成两句话：</p>
+
+<ol>
+  <li>让电脑能运行 <code class="language-plaintext highlighter-rouge">wps_mcp.py</code>。</li>
+  <li>让这个 Python 环境里安装好 <code class="language-plaintext highlighter-rouge">mcp</code>、<code class="language-plaintext highlighter-rouge">python-docx</code>、<code class="language-plaintext highlighter-rouge">openpyxl</code>、<code class="language-plaintext highlighter-rouge">python-pptx</code>。</li>
+</ol>
+
+<p>这一步可以按 WPS MCP 项目 README 操作，也可以让懂 Python 的同学帮你处理一次。后面在 Codex 桌面版里使用时，不需要你每次手动运行这些东西。</p>
+
+<h2 id="第一步打开-codex-桌面版的-mcp-配置">第一步：打开 Codex 桌面版的 MCP 配置</h2>
+
+<p>在 Codex 桌面版或 Codex 图形界面中，按这个路径找：</p>
+
+<div class="mcp-guide-demo">
+  <div>
+    <span>Open</span>
+    <p>右上角齿轮或设置入口</p>
+  </div>
+  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  <div>
+    <span>Settings</span>
+    <p>进入 Codex Settings</p>
+  </div>
+  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  <div>
+    <span>MCP</span>
+    <p>选择 MCP settings 或 Open config.toml</p>
+  </div>
+</div>
+
+<p>官方文档说明，Codex 的 MCP 配置保存在 <code class="language-plaintext highlighter-rouge">config.toml</code> 中。通常是用户级配置：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.codex/config.toml
+</code></pre></div></div>
+
+<p>如果你在某个项目里使用项目级配置，也可能是：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.codex/config.toml
+</code></pre></div></div>
+
+<p>新手建议先用用户级配置。这样你在 Codex 桌面版里每次开启新会话，都能看到同一套 WPS MCP 工具。</p>
+
+<h2 id="第二步写入-wps-mcp-配置">第二步：写入 WPS MCP 配置</h2>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">config.toml</code> 后，加入一个 <code class="language-plaintext highlighter-rouge">[mcp_servers.wps]</code> 配置块。</p>
+
+<p>macOS 示例：</p>
+
+<div class="language-toml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[mcp_servers.wps]</span>
+<span class="py">command</span> <span class="p">=</span> <span class="s">"/Users/&lt;你的用户名&gt;/Documents/mcp-servers/wps-mcp-server/.venv/bin/python"</span>
+<span class="py">args</span> <span class="p">=</span> <span class="nn">["/Users/&lt;你的用户名&gt;/Documents/mcp-servers/wps-mcp-server/wps_mcp.py"]</span>
+<span class="nn">env</span> <span class="o">=</span> <span class="p">{</span> <span class="py">WPS_WORKSPACE</span> <span class="p">=</span> <span class="s">"/Users/&lt;你的用户名&gt;/Documents/wps-mcp-workspace"</span> <span class="p">}</span>
+<span class="py">startup_timeout_sec</span> <span class="p">=</span> <span class="mi">20</span>
+<span class="py">tool_timeout_sec</span> <span class="p">=</span> <span class="mi">60</span>
+</code></pre></div></div>
+
+<p>Windows 示例：</p>
+
+<div class="language-toml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[mcp_servers.wps]</span>
+<span class="py">command</span> <span class="p">=</span> <span class="s">"C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">&lt;你的用户名&gt;</span><span class="se">\\</span><span class="s">Documents</span><span class="se">\\</span><span class="s">mcp-servers</span><span class="se">\\</span><span class="s">wps-mcp-server</span><span class="se">\\</span><span class="s">.venv</span><span class="se">\\</span><span class="s">Scripts</span><span class="se">\\</span><span class="s">python.exe"</span>
+<span class="py">args</span> <span class="p">=</span> <span class="nn">["C:\\Users\\&lt;你的用户名&gt;\\Documents\\mcp-servers\\wps-mcp-server\\wps_mcp.py"]</span>
+<span class="nn">env</span> <span class="o">=</span> <span class="p">{</span> <span class="py">WPS_WORKSPACE</span> <span class="p">=</span> <span class="s">"C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">&lt;你的用户名&gt;</span><span class="se">\\</span><span class="s">Documents</span><span class="se">\\</span><span class="s">wps-mcp-workspace"</span> <span class="p">}</span>
+<span class="py">startup_timeout_sec</span> <span class="p">=</span> <span class="mi">20</span>
+<span class="py">tool_timeout_sec</span> <span class="p">=</span> <span class="mi">60</span>
+</code></pre></div></div>
+
+<p>每一行的意思如下：</p>
+
+<div class="mcp-guide-annotated">
+  <div><code>[mcp_servers.wps]</code><span>给这个 MCP Server 起名叫 <code>wps</code>，之后 Codex 会用这个名字识别它。</span></div>
+  <div><code>command</code><span>指向能运行 WPS MCP 的 Python 程序。建议写绝对路径。</span></div>
+  <div><code>args</code><span>指向 WPS MCP 的服务脚本，也就是 <code>wps_mcp.py</code>。</span></div>
+  <div><code>env</code><span>给服务传入工作目录。本文用 <code>WPS_WORKSPACE</code> 限制输出位置。</span></div>
+  <div><code>startup_timeout_sec</code><span>允许服务启动慢一点，避免第一次加载依赖时超时。</span></div>
+</div>
+
+<p>注意，Codex 使用的是 TOML，不是 Cursor 或 Claude Desktop 常见的 JSON。不要写成：</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"wps"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Codex 需要的是：</p>
+
+<div class="language-toml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[mcp_servers.wps]</span>
+</code></pre></div></div>
+
+<p>这个差异非常重要。很多连接失败不是 WPS 的问题，而是把 JSON 配置粘进了 Codex 的 TOML 文件。</p>
+
+<h2 id="第三步重启-codex-桌面版">第三步：重启 Codex 桌面版</h2>
+
+<p>保存 <code class="language-plaintext highlighter-rouge">config.toml</code> 后，退出当前 Codex 会话，再重新打开 Codex 桌面版。</p>
+
+<p>重启的原因很简单：Codex 通常在新会话开始时读取 MCP 配置。你刚保存的 <code class="language-plaintext highlighter-rouge">wps</code> 工具箱，需要重新进入会话后才会被加载。</p>
+
+<p>你可以在新对话里直接问：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>请检查当前是否可以使用 wps MCP。先不要创建文件，只告诉我你能看到哪些 WPS 相关能力。
+</code></pre></div></div>
+
+<p>如果配置成功，Codex 应该会理解它可以通过 WPS MCP 创建文档、读写表格、生成演示稿等。如果它说找不到 <code class="language-plaintext highlighter-rouge">wps</code> 或找不到相关工具，就去看后面的排错部分。</p>
+
+<h2 id="第四步设置一个安全的工作目录">第四步：设置一个安全的工作目录</h2>
+
+<p>强烈建议把所有 AI 生成的办公文件都放进一个固定目录，例如：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Documents/wps-mcp-workspace/
+</code></pre></div></div>
+
+<figure class="mcp-guide-figure">
+  <div class="mcp-guide-folder-visual" role="img" aria-label="WPS MCP 工作目录中集中存放生成文件的示意图">
+    <div class="mcp-guide-folder">
+      <div class="mcp-guide-folder__tab">WPS_WORKSPACE</div>
+      <div class="mcp-guide-folder__body">
+        <span><i class="fa-solid fa-file-lines" aria-hidden="true"></i> weekly_report.docx</span>
+        <span><i class="fa-solid fa-table-cells" aria-hidden="true"></i> sales_brief.xlsx</span>
+        <span><i class="fa-solid fa-chart-simple" aria-hidden="true"></i> product_intro.pptx</span>
+      </div>
+    </div>
+    <div class="mcp-guide-folder-note">
+      <strong>只写入指定目录</strong>
+      <p>把 AI 输出限制在一个工作区，方便审核、删除和备份，也能降低误操作风险。</p>
+    </div>
+  </div>
+  <figcaption>工作目录不是形式主义，而是本地 MCP 工具最重要的安全边界。</figcaption>
+</figure>
+
+<p>为什么要这么做？</p>
+
+<ul>
+  <li>你知道生成的文件在哪里。</li>
+  <li>出错时容易删除重来。</li>
+  <li>不会把 AI 写入权限扩散到整个电脑。</li>
+  <li>后续想备份或同步，也只需要处理一个文件夹。</li>
+</ul>
+
+<h2 id="第五步简单应用-1生成一份-wps-周报">第五步：简单应用 1，生成一份 WPS 周报</h2>
+
+<p>在 Codex 桌面版的新对话里输入：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>请使用 wps MCP 创建一份 WPS 文字文档。
+
+文件名：weekly_report
+标题：AI Office Weekly Report
+结构：
+- Summary
+- Progress
+- Next Steps
+
+每个部分写一段简短内容，语气正式、适合作为工作周报。
+完成后告诉我文件保存路径。
+</code></pre></div></div>
+
+<p>你要观察三个结果：</p>
+
+<ol>
+  <li>Codex 是否明确说它调用了 WPS MCP。</li>
+  <li>工作目录里是否出现 <code class="language-plaintext highlighter-rouge">weekly_report.docx</code>。</li>
+  <li>用 WPS 打开后，标题和段落是否正常。</li>
+</ol>
+
+<p>如果这一步成功，说明“Codex 桌面版 -&gt; WPS MCP -&gt; WPS 文件”的基础链路已经跑通。</p>
+
+<h2 id="第六步简单应用-2生成一个销售表格">第六步：简单应用 2，生成一个销售表格</h2>
+
+<p>再输入：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>请使用 wps MCP 创建一个 WPS 表格。
+
+文件名：sales_brief
+Sheet 名称：Summary
+第一行字段：Month, Revenue, Cost, Profit
+写入 7 月、8 月、9 月三行示例数据。
+Profit 使用 Revenue - Cost 的公式。
+完成后告诉我文件保存路径。
+</code></pre></div></div>
+
+<p>打开生成的 <code class="language-plaintext highlighter-rouge">sales_brief.xlsx</code>，重点检查：</p>
+
+<ul>
+  <li>表头是否在第一行。</li>
+  <li>示例数据是否按月份排列。</li>
+  <li>Profit 列是否写入公式或计算结果。</li>
+</ul>
+
+<p>这类任务最适合 WPS MCP：结构清楚、字段明确、结果容易验证。</p>
+
+<h2 id="第七步简单应用-3生成一个三页-ppt">第七步：简单应用 3，生成一个三页 PPT</h2>
+
+<p>继续在 Codex 桌面版中输入：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>请使用 wps MCP 创建一个 WPS 演示文稿。
+
+文件名：product_intro
+主题：AI Office Automation
+页数：3 页
+第 1 页：标题页
+第 2 页：为什么使用 MCP
+第 3 页：WPS 自动化流程
+
+每页放 3 个简短 bullet points。
+完成后告诉我文件保存路径。
+</code></pre></div></div>
+
+<p>第一次生成 PPT 时，不要要求太复杂的排版。先确认能生成文件、能打开、内容结构正确。之后再逐步要求它优化标题、调整顺序或补充内容。</p>
+
+<div class="mcp-guide-result">
+  <strong>入门阶段的判断标准</strong>
+  <ul>
+    <li>能生成文件，比一开始就追求精美排版更重要。</li>
+    <li>能稳定重复生成，比一次性做复杂大文件更重要。</li>
+    <li>能明确保存路径，比让文件散落在电脑里更重要。</li>
+  </ul>
+</div>
+
+<h2 id="为什么-codex-桌面版也要写-configtoml">为什么 Codex 桌面版也要写 config.toml</h2>
+
+<p>这点看起来“不像桌面软件”，但它是 MCP 的核心设计。</p>
+
+<p>Codex 桌面版负责界面和对话，<code class="language-plaintext highlighter-rouge">config.toml</code> 负责告诉 Codex：有哪些外部工具可以用、怎么启动这些工具、工具的工作目录在哪里。官方文档也说明，Codex 的 MCP 配置通过 <code class="language-plaintext highlighter-rouge">[mcp_servers.&lt;server-name&gt;]</code> 这样的 TOML 表来声明。</p>
+
+<div class="mcp-guide-pipeline" aria-label="Codex 桌面版 MCP 配置原理">
+  <div><strong>Codex Desktop</strong><span>读取设置</span></div>
+  <b>config.toml</b>
+  <div><strong>WPS MCP</strong><span>暴露工具</span></div>
+  <b>Local Files</b>
+  <div><strong>WPS Office</strong><span>打开结果</span></div>
+</div>
+
+<p>所以，桌面版并不是不用配置，而是不需要你把使用过程放在命令行里。配置只做一次，之后的使用都可以回到图形界面对话中完成。</p>
+
+<h2 id="更稳定的提示词写法">更稳定的提示词写法</h2>
+
+<p>建议用“五段式”描述办公任务：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>请使用 wps MCP 生成一个 WPS 表格。
+
+目标：整理一个三个月销售简报。
+文件名：sales_brief_q3
+结构：
+- Sheet 名称：Summary
+- 字段：Month, Revenue, Cost, Profit, Margin
+- 写入 7 月、8 月、9 月三行示例数据
+- Profit = Revenue - Cost
+- Margin = Profit / Revenue
+输出：保存到 WPS_WORKSPACE。
+验证：完成后告诉我文件名、保存路径和主要字段。
+</code></pre></div></div>
+
+<p>这样写比“帮我做个表”稳定很多，因为 Codex 不需要猜文件名、字段、公式和输出位置。</p>
+
+<h2 id="常见问题">常见问题</h2>
+
+<h3 id="1-codex-桌面版里看不到-wps-mcp">1. Codex 桌面版里看不到 WPS MCP</h3>
+
+<p>通常是以下原因：</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">config.toml</code> 没有保存。</li>
+  <li>配置块写成了 JSON，而不是 TOML。</li>
+  <li><code class="language-plaintext highlighter-rouge">[mcp_servers.wps]</code> 拼错了。</li>
+  <li><code class="language-plaintext highlighter-rouge">command</code> 或 <code class="language-plaintext highlighter-rouge">args</code> 路径不存在。</li>
+  <li>修改配置后没有重启 Codex 会话。</li>
+</ul>
+
+<h3 id="2-codex-说-python-模块不存在">2. Codex 说 Python 模块不存在</h3>
+
+<p>这说明 <code class="language-plaintext highlighter-rouge">command</code> 指向的 Python 环境里没有安装 WPS MCP 需要的包。重点检查这个 Python 环境是否能导入：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mcp
+python-docx
+openpyxl
+python-pptx
+</code></pre></div></div>
+
+<p>不要只看电脑里“有没有 Python”，要看 <code class="language-plaintext highlighter-rouge">config.toml</code> 里那条 <code class="language-plaintext highlighter-rouge">command</code> 指向的 Python 是否安装了这些包。</p>
+
+<h3 id="3-文件生成了但不知道去哪了">3. 文件生成了，但不知道去哪了</h3>
+
+<p>看 <code class="language-plaintext highlighter-rouge">WPS_WORKSPACE</code>。如果你没有设置这个环境变量，示例项目可能会使用默认目录。为了避免混乱，建议始终显式设置：</p>
+
+<div class="language-toml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">env</span> <span class="o">=</span> <span class="p">{</span> <span class="py">WPS_WORKSPACE</span> <span class="p">=</span> <span class="s">"/你的/固定/输出目录"</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-它能生成文件但不能编辑我当前打开的-wps">4. 它能生成文件，但不能编辑我当前打开的 WPS</h3>
+
+<p>这是正常的。本文使用的是文件级 WPS MCP，它主要操作文件，不是遥控当前窗口。</p>
+
+<p>如果你要控制“当前打开的 WPS 表格”或做复杂图表、导出 PDF、宏操作，需要 Windows COM 自动化方案。但这类方案更依赖系统环境，建议等文件级 MCP 跑通后再尝试。</p>
+
+<h3 id="5-安全上要注意什么">5. 安全上要注意什么</h3>
+
+<p>MCP Server 是本地可执行工具，不是普通提示词。建议遵守三个原则：</p>
+
+<ul>
+  <li>只使用你信任的 MCP Server。</li>
+  <li>输出目录固定在 <code class="language-plaintext highlighter-rouge">WPS_WORKSPACE</code>。</li>
+  <li>不要把包含私人路径或密钥的 <code class="language-plaintext highlighter-rouge">config.toml</code> 上传到公开仓库。</li>
+</ul>
+
+<h2 id="最后总结">最后总结</h2>
+
+<p>Codex 桌面版配置 WPS MCP 的重点不是记命令，而是理解这个关系：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Codex 桌面版 -&gt; config.toml -&gt; WPS MCP Server -&gt; WPS 文件
+</code></pre></div></div>
+
+<p>配置只需要做一次。之后你就可以在 Codex 桌面版里直接用自然语言生成周报、表格和 PPT。入门时不要追求复杂排版，先确保三件事稳定：能连接、能生成、能找到文件。</p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<ul>
+  <li><a href="https://developers.openai.com/codex/mcp">OpenAI Developers: Model Context Protocol for Codex</a></li>
+  <li><a href="https://developers.openai.com/codex/config-basic/">OpenAI Developers: Codex Config Basics</a></li>
+  <li><a href="https://github.com/Xiao-rx/wps-mcp-server">Xiao-rx/wps-mcp-server: WPS 办公套件的 AI 原生操作</a></li>
+  <li><a href="https://github.com/hinora/office-mcp">hinora/office-mcp: Windows Office Automation MCP Servers</a></li>
+</ul>]]></content><author><name>Richard Chen</name><email>chenjd999@163.com</email><uri>https://richardchen99.github.io/</uri></author><category term="AI Tools" /><category term="MCP" /><category term="Codex" /><category term="WPS" /><summary type="html"><![CDATA[这是一篇面向桌面版 Codex 用户的 WPS MCP 配置教程：不从命令行讲起，而是从设置入口、配置文件、工作目录和简单办公应用一步步跑通。]]></summary></entry><entry><title type="html">Traditional ICE Cars vs New Energy Vehicles: 我为什么仍然偏爱燃油车</title><link href="https://richardchen99.github.io/ice-cars-vs-new-energy-vehicles/" rel="alternate" type="text/html" title="Traditional ICE Cars vs New Energy Vehicles: 我为什么仍然偏爱燃油车" /><published>2026-08-26T00:00:00+08:00</published><updated>2026-08-26T00:00:00+08:00</updated><id>https://richardchen99.github.io/ice-cars-vs-new-energy-vehicles</id><content type="html" xml:base="https://richardchen99.github.io/ice-cars-vs-new-energy-vehicles/"><![CDATA[<section class="car-essay">
+  <figure class="car-essay-hero">
+    <img src="https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/f04baeaaf031b319e0e19a14e3758162.jpeg" alt="一台深色德系豪华运动轿车行驶在山路上" />
+    <figcaption>我喜欢燃油车，不只是喜欢速度，而是喜欢机械、节奏、声音和驾驶者参与其中的感觉。</figcaption>
+  </figure>
+
+  <p class="car-essay-lead">如果只看加速、智能座舱、用车成本和城市通勤效率，新能源车已经非常强。它们安静、响应快、电子化程度高，也更符合未来交通系统的发展方向。但车不只是移动工具。对我来说，一台真正有吸引力的车，还应该有机械结构的质感、有长期品牌积累形成的性格，也有驾驶者和机器之间的交流。</p>
+
+  <p>所以在传统燃油车和新能源车之间，我会承认新能源车的理性优势，但情感上仍然更偏爱传统燃油车，尤其是 BMW、Mercedes-Benz 和 Audi 这类德系豪华品牌。它们最打动我的地方，不是简单的豪华配置，而是一种完整的工程表达：发动机、变速箱、底盘、转向、制动、声浪和车身姿态共同构成一种可感知的秩序。</p>
+
+  <figure class="car-real-gallery" aria-label="真实高清汽车图片参考">
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/BMW_M3_Competition_%28G80%29_IMG_4041.jpg/1920px-BMW_M3_Competition_%28G80%29_IMG_4041.jpg" alt="BMW M3 Competition G80 真实照片" loading="lazy" />
+      <figcaption>BMW M3 Competition (G80) · Alexander Migl · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:BMW_M3_Competition_(G80)_IMG_4041.jpg">Wikimedia Commons</a></figcaption>
+    </div>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mercedes-Benz_W223_IMG_3969.jpg/1920px-Mercedes-Benz_W223_IMG_3969.jpg" alt="Mercedes-Benz S-Class W223 真实照片" loading="lazy" />
+      <figcaption>Mercedes-Benz W223 · Alexander Migl · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W223_IMG_3969.jpg">Wikimedia Commons</a></figcaption>
+    </div>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Audi_A6_Avant_e-tron_IMG_3999.jpg/1920px-Audi_A6_Avant_e-tron_IMG_3999.jpg" alt="Audi A6 Avant e-tron 真实照片" loading="lazy" />
+      <figcaption>Audi A6 Avant e-tron · Alexander-93 · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Audi_A6_Avant_e-tron_IMG_3999.jpg">Wikimedia Commons</a></figcaption>
+    </div>
+  </figure>
+
+  <div class="car-essay-grid">
+    <article>
+      <span>01</span>
+      <h2>新能源车赢在效率</h2>
+      <p>电机响应直接，城市低速体验顺滑，能耗成本也更低。智能座舱、辅助驾驶和 OTA 更新，让汽车越来越像一个移动计算平台。</p>
+    </article>
+    <article>
+      <span>02</span>
+      <h2>燃油车赢在参与感</h2>
+      <p>一脚油门下去，转速攀升、换挡节奏、排气声浪和底盘反馈会组成连续的驾驶叙事。这种感觉不是屏幕参数能完全替代的。</p>
+    </article>
+    <article>
+      <span>03</span>
+      <h2>我的偏好是机械美学</h2>
+      <p>我更喜欢能够被感知、被理解、被掌控的机器。燃油车的魅力，恰恰在于它不是完全“无感”的高效运输，而是有性格的工程作品。</p>
+    </article>
+  </div>
+
+  <h2>理性比较：新能源车确实很强</h2>
+
+  <p>从产业趋势看，新能源车代表的是更高的能源效率、更强的软件定义能力，以及更适合城市交通的数据化系统。它们的优势非常清晰：</p>
+
+  <ul>
+    <li><strong>加速响应：</strong>电机扭矩来得直接，日常驾驶非常轻松。</li>
+    <li><strong>智能体验：</strong>屏幕、语音、辅助驾驶和车机生态通常更新更快。</li>
+    <li><strong>能源成本：</strong>在充电条件稳定的情况下，通勤成本明显更低。</li>
+    <li><strong>城市友好：</strong>低速安静、启停顺滑，对拥堵场景很友好。</li>
+  </ul>
+
+  <p>如果把车看成一个“效率最大化问题”，新能源车的得分会很高。它像一个强大的算法系统：响应快、迭代快、数据闭环快。</p>
+
+  <figure class="car-essay-image">
+    <img src="https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/c06af7ecaeda0ebd4574d89d07e4a1e9.jpeg" alt="传统燃油豪华轿车与现代新能源车的对比场景" />
+    <figcaption>新能源车和燃油车并不是简单的新旧对立，而是两套不同的产品哲学。</figcaption>
+  </figure>
+
+  <h2>但燃油车有一种不可替代的驾驶秩序</h2>
+
+  <p>我偏爱传统燃油车，是因为它有更强的过程感。电动车很快，但很多时候快得太直接；燃油车的快是逐层展开的。发动机转速上来、变速箱降挡、声浪变厚、车身重心变化，这些细节让驾驶不只是结果，而是一个过程。</p>
+
+  <p>尤其是 BMW、Mercedes-Benz、Audi，它们各自代表了我很喜欢的三种德系表达：</p>
+
+  <div class="car-essay-marquees">
+    <div>
+      <strong>BMW</strong>
+      <span>Driver's Car</span>
+      <p>吸引我的是底盘、转向和动力响应之间的直接关系。BMW 的魅力是让驾驶者觉得自己正在参与控制，而不是被系统隔在外面。</p>
+    </div>
+    <div>
+      <strong>Mercedes-Benz</strong>
+      <span>Luxury Authority</span>
+      <p>Mercedes-Benz 更像一种从容的秩序感。它强调舒适、气场和机械精致度，适合长距离，也适合表达一种成熟的审美。</p>
+    </div>
+    <div>
+      <strong>Audi</strong>
+      <span>Engineering Calm</span>
+      <p>Audi 的吸引力在于理性、克制和工程完整性。quattro、灯光、座舱和整车质感，构成一种很冷静的科技感。</p>
+    </div>
+  </div>
+
+  <figure class="car-essay-image">
+    <img src="https://lf-cdn.trae.com.cn/obj/trae-ai-image/page_image/eb8bcb9194235b408f8d1ba99466d5d1.jpeg" alt="夜晚传统燃油豪华轿车座舱与机械仪表" />
+    <figcaption>燃油车的仪表、转速和换挡节奏，是一种可以被身体感知的工程语言。</figcaption>
+  </figure>
+
+  <h2>如果把买车看成一个决策智能问题</h2>
+
+  <p>我不会把“喜欢燃油车”说成一个完全理性的结论。更准确地说，这是一个在理性约束下的偏好选择。就像做决策智能，关键不只是模型输出，还要先定义目标函数、约束条件、权重结构和风险惩罚项。买车不是单一指标最大化，而是一个多目标、多场景、强偏好的 MCDA（Multi-Criteria Decision Analysis）问题。</p>
+
+  <div class="car-model-lab" aria-label="燃油车与新能源车多准则决策模型">
+    <div class="car-model-lab__header">
+      <div>
+        <span>DECISION MODEL</span>
+        <h3>Car Choice as MCDA</h3>
+        <p>评分采用 0-100 归一化尺度，权重反映我的个人偏好：驾驶参与感、品牌底蕴和长距离节奏被赋予更高权重；能耗、软件体验与政策友好度仍作为理性约束进入模型。</p>
+      </div>
+      <code>Utility = Σ(weight × score) - scenario penalty</code>
+    </div>
+
+    <div class="car-model-score">
+      <article>
+        <span>ICE Preference Fit</span>
+        <strong>80.9</strong>
+        <small>在我的权重结构下，燃油车小幅领先。</small>
+      </article>
+      <article>
+        <span>NEV Preference Fit</span>
+        <strong>77.2</strong>
+        <small>新能源车在效率与软件维度显著领先。</small>
+      </article>
+      <article>
+        <span>Decision Delta</span>
+        <strong>+3.7</strong>
+        <small>不是否定新能源，而是偏好权重改变了最优解。</small>
+      </article>
+    </div>
+
+    <div class="car-model-chart" aria-label="关键指标归一化对比">
+      <div class="car-model-row" style="--ice: 92%; --nev: 72%;">
+        <span>Driving involvement</span><small>w=0.26</small>
+        <b><i></i><em>ICE 92</em></b><b class="is-nev"><i></i><em>NEV 72</em></b>
+      </div>
+      <div class="car-model-row" style="--ice: 90%; --nev: 70%;">
+        <span>Brand heritage</span><small>w=0.20</small>
+        <b><i></i><em>ICE 90</em></b><b class="is-nev"><i></i><em>NEV 70</em></b>
+      </div>
+      <div class="car-model-row" style="--ice: 88%; --nev: 74%;">
+        <span>Long-distance rhythm</span><small>w=0.15</small>
+        <b><i></i><em>ICE 88</em></b><b class="is-nev"><i></i><em>NEV 74</em></b>
+      </div>
+      <div class="car-model-row" style="--ice: 86%; --nev: 76%;">
+        <span>Infrastructure flexibility</span><small>w=0.13</small>
+        <b><i></i><em>ICE 86</em></b><b class="is-nev"><i></i><em>NEV 76</em></b>
+      </div>
+      <div class="car-model-row" style="--ice: 55%; --nev: 92%;">
+        <span>Energy / operating cost</span><small>w=0.10</small>
+        <b><i></i><em>ICE 55</em></b><b class="is-nev"><i></i><em>NEV 92</em></b>
+      </div>
+      <div class="car-model-row" style="--ice: 62%; --nev: 91%;">
+        <span>Software experience</span><small>w=0.08</small>
+        <b><i></i><em>ICE 62</em></b><b class="is-nev"><i></i><em>NEV 91</em></b>
+      </div>
+      <div class="car-model-row" style="--ice: 52%; --nev: 88%;">
+        <span>Policy / low-carbon fit</span><small>w=0.08</small>
+        <b><i></i><em>ICE 52</em></b><b class="is-nev"><i></i><em>NEV 88</em></b>
+      </div>
+    </div>
+
+    <div class="car-sensitivity">
+      <article>
+        <span>Scenario A</span>
+        <strong>城市效率优先</strong>
+        <p>当通勤成本、补能便利、智能座舱与低碳政策的综合权重超过 45% 时，新能源车成为更稳健的解。</p>
+      </article>
+      <article>
+        <span>Scenario B</span>
+        <strong>驾驶体验优先</strong>
+        <p>当驾驶参与、机械质感、品牌积累与长途节奏的综合权重超过 50% 时，燃油车仍然更符合我的效用函数。</p>
+      </article>
+      <article>
+        <span>Scenario C</span>
+        <strong>风险约束优先</strong>
+        <p>如果充电环境不稳定、长途频率较高，新能源优势会被基础设施不确定性折扣；如果主要是城市通勤，则燃油车优势会被能耗惩罚抵消。</p>
+      </article>
+    </div>
+
+    <p class="car-data-note">数据口径说明：这里的分数不是绝对购车建议，而是将公开技术指标、用车场景和个人偏好做归一化后的决策模型。能源效率侧参考 <a href="https://www.fueleconomy.gov/FEG/atv-ev.shtml">FuelEconomy.gov</a> 对 EV 能量流的说明：EV 电驱系统损失约 15%-20%，而传统汽油发动机损失约 64%-75%；性能侧参考 <a href="https://more-cars.net/bmw-m3-competition-10224014">BMW M3 Competition</a> 公开参数（375 kW、650 Nm、0-100 km/h 约 3.9s）。因此模型结论不是“谁更先进”，而是“在什么权重下谁更适合”。</p>
+  </div>
+
+  <p>这个模型的结论比简单站队更清楚：新能源车在城市效率、软件体验和政策友好度上确实强；但如果目标函数强调驾驶者参与、机械反馈、长距离节奏和品牌历史，传统燃油车仍然可以在综合效用上胜出。也就是说，我偏爱燃油车，不是忽略数据，而是把“喜欢驾驶本身”放进了模型。</p>
+
+  <blockquote class="car-essay-quote">
+    我喜欢燃油车，不是因为拒绝未来，而是因为我仍然珍惜人与机械之间那种可感知的连接。
+  </blockquote>
+
+  <h2>我的答案</h2>
+
+  <p>新能源车是未来交通的重要方向，我认可它的效率、智能化和产业价值。但如果让我选一台真正让我愿意长久拥有、反复驾驶、甚至在停车后回头看一眼的车，我仍然会偏向传统燃油车。</p>
+
+  <p>尤其是 BMW、Mercedes-Benz 和 Audi。它们让我感兴趣的不是单一配置，而是品牌长期形成的工程性格。BMW 更强调驾驶参与，Mercedes-Benz 更强调豪华秩序，Audi 更强调科技克制。三者不同，但都保留着传统燃油车最迷人的部分：机械不是冰冷工具，而是一种有性格、有节奏、有记忆点的作品。</p>
+
+  <p>技术会继续向前，汽车也会越来越智能。但我希望未来的车，即使变得更高效、更自动化，也不要失去驾驶本身的仪式感。对我来说，这也是传统燃油车最值得被记住的地方。</p>
+</section>]]></content><author><name>Richard Chen</name><email>chenjd999@163.com</email><uri>https://richardchen99.github.io/</uri></author><category term="Cars" /><category term="Decision Intelligence" /><category term="Lifestyle" /><summary type="html"><![CDATA[新能源车代表效率与智能化，传统燃油车代表机械感、品牌底蕴与驾驶参与感。站在理性比较之后，我仍然更偏爱传统燃油车，尤其是 BMW、Mercedes-Benz 和 Audi。]]></summary></entry><entry><title type="html">从数据分析到决策智能：这个博客会记录什么</title><link href="https://richardchen99.github.io/from-analysis-to-decision-intelligence/" rel="alternate" type="text/html" title="从数据分析到决策智能：这个博客会记录什么" /><published>2026-08-24T00:00:00+08:00</published><updated>2026-08-24T00:00:00+08:00</updated><id>https://richardchen99.github.io/from-analysis-to-decision-intelligence</id><content type="html" xml:base="https://richardchen99.github.io/from-analysis-to-decision-intelligence/"><![CDATA[<p>数据分析的价值不只在于描述发生了什么，更在于帮助人们形成判断、理解边界并采取行动。</p>
+
+<p>我希望在这里持续记录三个方向：</p>
+
+<h2 id="ai-与决策">AI 与决策</h2>
+
+<p>大语言模型和智能体正在改变信息获取与研究流程。但真正值得讨论的问题不是“模型能做什么”，而是模型输出如何被验证、如何进入决策流程，以及人应该在哪些关键节点保持控制。</p>
+
+<h2 id="商业分析">商业分析</h2>
+
+<p>从需求预测、定价与补货，到产业趋势和用户行为，商业分析需要同时理解数据、业务机制和执行约束。一个统计上显著的结果，并不天然等于一个值得执行的建议。</p>
+
+<h2 id="金融科技">金融科技</h2>
+
+<p>金融市场包含大量结构化与非结构化信息。我关心如何利用文本分析、机器学习和多源数据识别风险与预期变化，同时避免模型过拟合和虚假确定性。</p>
+
+<p>未来我会在这里发布研究笔记、项目复盘、工具实践和阅读思考。相关资料或代码会通过正文链接直接给出，例如我的 <a href="https://github.com/richardchen99">GitHub</a>。</p>]]></content><author><name>Richard Chen</name><email>chenjd999@163.com</email><uri>https://richardchen99.github.io/</uri></author><category term="AI" /><category term="Business Analytics" /><category term="FinTech" /><summary type="html"><![CDATA[数据分析的价值不只在于描述发生了什么，更在于帮助人们形成判断、理解边界并采取行动。]]></summary></entry></feed>
